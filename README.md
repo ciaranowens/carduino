@@ -36,6 +36,10 @@ mega-control-unit/
 
 Each control unit will include KiCad schematics, code and an example reference configuration.
 
+### Target Hardware
+As the name might suggest, this project is designed with the constraints of the Arudino 2560 in mind. Ideally, a PCB in an enclosure will connect up like a "hat",
+such that really the hardware is off-the-shelf commodity stuff and the PCB is a means to interface with the rest of the car, making this accessible to hobbyists.
+
 ## hvac-mega-control-unit
 This unit controls the heating, ventilation and air conditioning, including heated seats. Will contain functionality for
 - Climate control (dual zone)
