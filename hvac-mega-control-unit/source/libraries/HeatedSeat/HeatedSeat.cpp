@@ -1,4 +1,4 @@
-#include heated_seat.h
+#include "HeatedSeat.h"
 
 HeatedSeat::HeatedSeat(byte OutputPin, byte NumTempLevels, boolean PWMControl, byte InputPin) {
     this->OutputPin = OutputPin;

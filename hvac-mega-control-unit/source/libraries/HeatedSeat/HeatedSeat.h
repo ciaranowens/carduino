@@ -1,5 +1,5 @@
-#ifndef HEATED_SEAT_H
-#define HEATED_SEAT_H
+#ifndef HEATEDSEAT_H
+#define HEATEDSEAT_H
 
 #include <Arduino.h>
 
