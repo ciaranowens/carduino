@@ -12,11 +12,16 @@ HeatedSeat FLHeatedSeat(FLHeatedSeatOutputPin, HeatedSeatNumLevels, PWMHeatedSea
 HeatedSeat FRHeatedSeat(FRHeatedSeatOutputPin, HeatedSeatNumLevels, PWMHeatedSeats, FRHeatedSeatInputPin);
 
 void setup () {
+    // Use the External 5v AREF
+    analogReference(EXTERNAL);
+    
+    // Init Heated Seats
     FLHeatedSeat.init();
     FRHeatedSeat.init();
 }
 
 void loop() {
+    // Update Heated Seat temperature settings
     FLHeatedSeat.poll();
     FRHeatedSeat.poll();
 }

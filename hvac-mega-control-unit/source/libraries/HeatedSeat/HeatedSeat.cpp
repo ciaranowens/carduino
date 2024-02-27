@@ -10,7 +10,6 @@ HeatedSeat::HeatedSeat(byte OutputPin, byte NumTempLevels, boolean PWMControl, b
 
 void HeatedSeat::init() {
     // Set Defaults
-    pinMode(OutputPin, OUTPUT);
     currentTempSetting = 0;
      // AnalogRead has a range of 0-1023. Out is 0-255
     MaxAnalogRead = 1023;
